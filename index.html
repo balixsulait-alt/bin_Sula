@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sulaiman Balikoowa — Full-Stack Developer, Ethical Hacker & Big Data Enthusiast. Explore my projects, skills, and journey toward building the future." />
+  <meta name="keywords" content="Sulaiman Balikoowa, Full-Stack Developer, Ethical Hacker, Penetration Testing, Big Data, React, Next.js, Flutter, Python, Uganda" />
+  <meta name="author" content="Sulaiman Balikoowa" />
+  <meta property="og:title" content="Sulaiman Balikoowa | Dev · Hacker · Data Nerd" />
+  <meta property="og:description" content="Full-Stack Dev · Ethical Hacker · Big Data Nerd · Future Founder 🚀" />
+  <meta property="og:type" content="website" />
+  <title>Sulaiman Balikoowa | Dev · Hacker · Data Nerd 🚀</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===== PARTICLE CANVAS ===== -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo-link">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">SB</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <a href="mailto:balixsulait@gmail.com" class="nav-cta" id="nav-cta-btn">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge" id="hero-badge">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-title" id="hero-title">
+          I'm <span class="gradient-text">Sulaiman</span><br />
+          <span class="hero-subtitle-inline">Balikoowa.</span>
+        </h1>
+        <p class="hero-roles" id="hero-roles">
+          <span class="role-tag">Full-Stack Dev</span>
+          <span class="role-divider">·</span>
+          <span class="role-tag">Ethical Hacker</span>
+          <span class="role-divider">·</span>
+          <span class="role-tag">Big Data Nerd</span>
+          <span class="role-divider">·</span>
+          <span class="role-tag">Future Founder 🚀</span>
+        </p>
+        <p class="hero-quote" id="hero-quote">
+          Code it. Break it. Secure it. Analyze it.
+        </p>
+        <div class="hero-cta-group" id="hero-cta-group">
+          <a href="#projects" class="btn btn-primary" id="view-projects-btn">View My Work</a>
+          <a href="#contact" class="btn btn-ghost" id="get-in-touch-btn">Get In Touch</a>
+        </div>
+        <div class="hero-stats" id="hero-stats">
+          <div class="stat">
+            <span class="stat-number" data-target="14">0</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number" data-target="3">0</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number" data-target="2030">0</span>
+            <span class="stat-label">Startup Target</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-area" id="hero-image-area">
+        <div class="image-frame">
+          <div class="image-glow"></div>
+          <img src="assets/images/profile.png" alt="Sulaiman Balikoowa — Full-Stack Developer & Ethical Hacker" class="profile-img" id="profile-img" />
+          <div class="image-border-ring"></div>
+        </div>
+        <div class="floating-card card-py" id="float-card-1">
+          <span class="fc-icon">🐍</span>
+          <span class="fc-text">Python</span>
+        </div>
+        <div class="floating-card card-sec" id="float-card-2">
+          <span class="fc-icon">🔐</span>
+          <span class="fc-text">Red Team</span>
+        </div>
+        <div class="floating-card card-data" id="float-card-3">
+          <span class="fc-icon">📊</span>
+          <span class="fc-text">Big Data</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" id="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about" id="about">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-tag">Who am I</span>
+        <h2 class="section-title">A bit <span class="gradient-text">about me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="about-para">
+            Full-stack developer who also breaks things for fun — ethically. I spend my days building UIs people actually enjoy using, then my evenings poking at servers looking for holes. Security isn't a checkbox to me; it's a way of thinking.
+          </p>
+          <p class="about-para">
+            My stack is wide: <strong>Python, JS/TS, React, Next.js, Node.js, PHP, Laravel, Django, Dart, Flutter, Java, SQL, Oracle &amp; MongoDB</strong>. Equally comfortable sketching a DB schema as wiring up a CI/CD pipeline.
+          </p>
+          <p class="about-para">
+            Strong pull toward <strong class="highlight-red">cybersecurity</strong> — red teaming, digital forensics, pen testing. Equal obsession with <strong>big data</strong>: pipelines, analytics, making sense of noise.
+          </p>
+          <p class="about-para">
+            Also quietly building something for 2030. Not ready to say more yet. 👀
+          </p>
+          <div class="about-info-list">
+            <div class="info-item">
+              <span class="info-icon">📬</span>
+              <a href="mailto:balixsulait@gmail.com" class="info-link">balixsulait@gmail.com</a>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🐙</span>
+              <a href="https://github.com/balixsulait-alt" target="_blank" rel="noopener noreferrer" class="info-link">github.com/balixsulait-alt</a>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🌍</span>
+              <span class="info-text">Open to Remote & Global Collabs</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary about-cta" id="about-contact-btn">Let's Build Something →</a>
+        </div>
+        <div class="about-cards reveal">
+          <div class="about-card" id="about-card-dev">
+            <div class="ac-icon-wrap">💻</div>
+            <h3 class="ac-title">Full-Stack Dev</h3>
+            <p class="ac-desc">Building end-to-end solutions from database to UI with modern frameworks & languages.</p>
+          </div>
+          <div class="about-card" id="about-card-sec">
+            <div class="ac-icon-wrap red-glow">🔴</div>
+            <h3 class="ac-title">Ethical Hacker</h3>
+            <p class="ac-desc">Red team mindset — pen testing, digital forensics & securing what others overlook.</p>
+          </div>
+          <div class="about-card" id="about-card-data">
+            <div class="ac-icon-wrap purple-glow">📊</div>
+            <h3 class="ac-title">Big Data Nerd</h3>
+            <p class="ac-desc">Always crunching — pipelines, analytics, and turning raw data into actionable insights.</p>
+          </div>
+          <div class="about-card" id="about-card-startup">
+            <div class="ac-icon-wrap orange-glow">🚀</div>
+            <h3 class="ac-title">Future Founder</h3>
+            <p class="ac-desc">Quietly ideating a startup — target launch 2030. Building the vision piece by piece.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="skills" id="skills">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I Use</span>
+        <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+      </div>
+
+      <div class="skills-tabs reveal" id="skills-tabs">
+        <button class="tab-btn active" data-tab="languages" id="tab-languages">Languages & Frameworks</button>
+        <button class="tab-btn" data-tab="databases" id="tab-databases">Databases</button>
+        <button class="tab-btn" data-tab="tools" id="tab-tools">Tools & Platforms</button>
+        <button class="tab-btn" data-tab="security" id="tab-security">Cybersecurity</button>
+      </div>
+
+      <div class="tab-content active" id="tab-content-languages">
+        <div class="skills-grid">
+          <div class="skill-chip" id="skill-python"><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python" /><span>Python</span></div>
+          <div class="skill-chip" id="skill-js"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" alt="JavaScript" /><span>JavaScript</span></div>
+          <div class="skill-chip" id="skill-ts"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript" /><span>TypeScript</span></div>
+          <div class="skill-chip" id="skill-java"><img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white" alt="Java" /><span>Java</span></div>
+          <div class="skill-chip" id="skill-dart"><img src="https://img.shields.io/badge/Dart-0175C2?style=flat&logo=dart&logoColor=white" alt="Dart" /><span>Dart</span></div>
+          <div class="skill-chip" id="skill-php"><img src="https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white" alt="PHP" /><span>PHP</span></div>
+          <div class="skill-chip" id="skill-html"><img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML5" /><span>HTML5</span></div>
+          <div class="skill-chip" id="skill-react"><img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB" alt="React" /><span>React</span></div>
+          <div class="skill-chip" id="skill-nextjs"><img src="https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white" alt="Next.js" /><span>Next.js</span></div>
+          <div class="skill-chip" id="skill-nodejs"><img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white" alt="Node.js" /><span>Node.js</span></div>
+          <div class="skill-chip" id="skill-django"><img src="https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white" alt="Django" /><span>Django</span></div>
+          <div class="skill-chip" id="skill-laravel"><img src="https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel&logoColor=white" alt="Laravel" /><span>Laravel</span></div>
+          <div class="skill-chip" id="skill-flutter"><img src="https://img.shields.io/badge/Flutter-02569B?style=flat&logo=flutter&logoColor=white" alt="Flutter" /><span>Flutter</span></div>
+          <div class="skill-chip" id="skill-sql"><img src="https://img.shields.io/badge/SQL-4479A1?style=flat&logo=mysql&logoColor=white" alt="SQL" /><span>SQL</span></div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-content-databases">
+        <div class="skills-grid">
+          <div class="skill-chip" id="skill-mysql"><img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" alt="MySQL" /><span>MySQL</span></div>
+          <div class="skill-chip" id="skill-oracle"><img src="https://img.shields.io/badge/Oracle-F80000?style=flat&logo=oracle&logoColor=white" alt="Oracle" /><span>Oracle</span></div>
+          <div class="skill-chip" id="skill-mongo"><img src="https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white" alt="MongoDB" /><span>MongoDB</span></div>
+          <div class="skill-chip" id="skill-postgres"><img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white" alt="PostgreSQL" /><span>PostgreSQL</span></div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-content-tools">
+        <div class="skills-grid">
+          <div class="skill-chip" id="skill-linux"><img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black" alt="Linux" /><span>Linux</span></div>
+          <div class="skill-chip" id="skill-git"><img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" alt="Git" /><span>Git</span></div>
+          <div class="skill-chip" id="skill-github"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" alt="GitHub" /><span>GitHub</span></div>
+          <div class="skill-chip" id="skill-docker"><img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" alt="Docker" /><span>Docker</span></div>
+          <div class="skill-chip" id="skill-vscode"><img src="https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white" alt="VS Code" /><span>VS Code</span></div>
+          <div class="skill-chip" id="skill-kali"><img src="https://img.shields.io/badge/Kali%20Linux-557C94?style=flat&logo=kalilinux&logoColor=white" alt="Kali Linux" /><span>Kali Linux</span></div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-content-security">
+        <div class="skills-grid">
+          <div class="skill-chip skill-red" id="skill-ethicalhack"><span class="skill-chip-icon">🔴</span><span>Ethical Hacking</span></div>
+          <div class="skill-chip skill-red" id="skill-pentest"><span class="skill-chip-icon">💉</span><span>Penetration Testing</span></div>
+          <div class="skill-chip skill-red" id="skill-forensics"><span class="skill-chip-icon">🔍</span><span>Digital Forensics</span></div>
+          <div class="skill-chip skill-red" id="skill-redteam"><span class="skill-chip-icon">⚔️</span><span>Red Team Ops</span></div>
+          <div class="skill-chip skill-red" id="skill-osint"><span class="skill-chip-icon">🌐</span><span>OSINT</span></div>
+          <div class="skill-chip skill-red" id="skill-vuln"><span class="skill-chip-icon">🛡️</span><span>Vuln Assessment</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="projects" id="projects">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal" id="project-pentest">
+          <div class="project-img-wrap">
+            <img src="assets/images/project-pentest.png" alt="NetStrike Pro — Penetration Testing Dashboard" class="project-img" loading="lazy" />
+            <div class="project-overlay">
+              <div class="overlay-links">
+                <a href="#" class="overlay-btn" id="proj1-demo-btn" aria-label="Live Demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Live Demo
+                </a>
+                <a href="https://github.com/balixsulait-alt" target="_blank" rel="noopener noreferrer" class="overlay-btn" id="proj1-github-btn" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+            <div class="project-status-badge">🔴 Active</div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-red">Python</span>
+              <span class="tag tag-blue">Django</span>
+              <span class="tag tag-red">Kali Linux</span>
+              <span class="tag tag-gray">Nmap</span>
+              <span class="tag tag-gray">React</span>
+            </div>
+            <h3 class="project-title">NetStrike Pro</h3>
+            <p class="project-desc">A full-featured penetration testing dashboard that automates recon, vulnerability scanning, and exploit tracking. Features live network topology maps, CVE tracking, attack surface heatmaps, and exploit log streaming — all in a sleek dark terminal UI.</p>
+            <div class="project-highlights">
+              <span class="ph-item">✅ Network topology visualization</span>
+              <span class="ph-item">✅ CVE vulnerability tracker</span>
+              <span class="ph-item">✅ Live exploit logs</span>
+              <span class="ph-item">✅ Attack surface heatmaps</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal" id="project-bigdata">
+          <div class="project-img-wrap">
+            <img src="assets/images/project-bigdata.png" alt="Nexus Analytics — Big Data Platform" class="project-img" loading="lazy" />
+            <div class="project-overlay">
+              <div class="overlay-links">
+                <a href="#" class="overlay-btn" id="proj2-demo-btn" aria-label="Live Demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Live Demo
+                </a>
+                <a href="https://github.com/balixsulait-alt" target="_blank" rel="noopener noreferrer" class="overlay-btn" id="proj2-github-btn" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+            <div class="project-status-badge">🟡 Beta</div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-purple">Python</span>
+              <span class="tag tag-blue">Apache Kafka</span>
+              <span class="tag tag-purple">MongoDB</span>
+              <span class="tag tag-gray">Next.js</span>
+              <span class="tag tag-gray">Docker</span>
+            </div>
+            <h3 class="project-title">Nexus Analytics Platform</h3>
+            <p class="project-desc">A real-time big data streaming & analytics platform powered by Apache Kafka and MongoDB. Ingests 1.8M+ events/minute with sub-15ms latency. Features interactive global event maps, Kafka cluster health monitoring, custom data pipeline orchestration, and live throughput dashboards.</p>
+            <div class="project-highlights">
+              <span class="ph-item">✅ 1.2 GB/s data ingestion</span>
+              <span class="ph-item">✅ Real-time streaming analytics</span>
+              <span class="ph-item">✅ Global event visualization</span>
+              <span class="ph-item">✅ Kafka cluster monitoring</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal" id="project-ecommerce">
+          <div class="project-img-wrap">
+            <img src="assets/images/project-ecommerce.png" alt="ApexTech — Full-Stack E-Commerce Platform" class="project-img" loading="lazy" />
+            <div class="project-overlay">
+              <div class="overlay-links">
+                <a href="#" class="overlay-btn" id="proj3-demo-btn" aria-label="Live Demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Live Demo
+                </a>
+                <a href="https://github.com/balixsulait-alt" target="_blank" rel="noopener noreferrer" class="overlay-btn" id="proj3-github-btn" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+            <div class="project-status-badge">🟢 Live</div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-blue">Next.js</span>
+              <span class="tag tag-teal">Flutter</span>
+              <span class="tag tag-green">Node.js</span>
+              <span class="tag tag-purple">PostgreSQL</span>
+              <span class="tag tag-gray">Docker</span>
+            </div>
+            <h3 class="project-title">ApexTech E-Commerce</h3>
+            <p class="project-desc">A full-stack cross-platform e-commerce solution with a Flutter mobile app and Next.js web frontend. Features seamless product browsing, cart management, secure payment integration, order tracking, and a comprehensive admin dashboard — all backed by a Node.js/PostgreSQL API.</p>
+            <div class="project-highlights">
+              <span class="ph-item">✅ Cross-platform (Web + Mobile)</span>
+              <span class="ph-item">✅ Payment gateway integration</span>
+              <span class="ph-item">✅ Admin dashboard</span>
+              <span class="ph-item">✅ Real-time order tracking</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="projects-cta reveal">
+        <p>More coming soon — always building 🔨</p>
+        <a href="https://github.com/balixsulait-alt" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" id="github-all-btn">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          View All on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GITHUB ACTIVITY SECTION ===== -->
+  <section class="github-stats" id="stats">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-tag">My Activity</span>
+        <h2 class="section-title">GitHub <span class="gradient-text">Activity</span></h2>
+        <p class="section-desc">Coding since 2022 — a few all-nighters, a lot of commits, and one or two 3am breakthroughs.</p>
+      </div>
+
+      <!-- Quick stat counters -->
+      <div class="gh-meta-row reveal">
+        <div class="gh-meta-chip">
+          <span class="gh-meta-num" data-gh-target="847">0</span>
+          <span class="gh-meta-label">Total Commits</span>
+        </div>
+        <div class="gh-meta-chip">
+          <span class="gh-meta-num" data-gh-target="14">0</span>
+          <span class="gh-meta-label">Languages</span>
+        </div>
+        <div class="gh-meta-chip">
+          <span class="gh-meta-num" data-gh-target="3">0</span>
+          <span class="gh-meta-label">Repos</span>
+        </div>
+        <div class="gh-meta-chip">
+          <span class="gh-meta-num" data-gh-target="38">0</span>
+          <span class="gh-meta-label">Day Streak</span>
+        </div>
+      </div>
+
+      <!-- Heatmap -->
+      <div class="heatmap-wrapper reveal" id="heatmap-wrapper">
+        <div class="heatmap-header">
+          <div class="heatmap-year-tabs" id="heatmap-year-tabs">
+            <button class="hy-tab" data-year="2022">2022</button>
+            <button class="hy-tab" data-year="2023">2023</button>
+            <button class="hy-tab" data-year="2024">2024</button>
+            <button class="hy-tab active" data-year="2025">2025</button>
+          </div>
+          <div class="heatmap-legend">
+            <span class="hl-label">Less</span>
+            <span class="hl-cell" data-lvl="0"></span>
+            <span class="hl-cell" data-lvl="1"></span>
+            <span class="hl-cell" data-lvl="2"></span>
+            <span class="hl-cell" data-lvl="3"></span>
+            <span class="hl-cell" data-lvl="4"></span>
+            <span class="hl-label">More</span>
+          </div>
+        </div>
+        <div class="heatmap-months" id="heatmap-months"></div>
+        <div class="heatmap-grid" id="heatmap-grid"></div>
+        <div class="heatmap-tooltip" id="heatmap-tooltip"></div>
+      </div>
+
+      <!-- Language bar -->
+      <div class="lang-bar-card reveal" id="lang-bar-card">
+        <h3 class="stats-card-title">Language Breakdown</h3>
+        <div class="lang-bars" id="lang-bars">
+          <div class="lang-bar-row">
+            <span class="lb-name">Python</span>
+            <div class="lb-track"><div class="lb-fill" data-pct="32" style="--c:#3776AB"></div></div>
+            <span class="lb-pct">32%</span>
+          </div>
+          <div class="lang-bar-row">
+            <span class="lb-name">JavaScript / TS</span>
+            <div class="lb-track"><div class="lb-fill" data-pct="27" style="--c:#F7DF1E"></div></div>
+            <span class="lb-pct">27%</span>
+          </div>
+          <div class="lang-bar-row">
+            <span class="lb-name">Dart / Flutter</span>
+            <div class="lb-track"><div class="lb-fill" data-pct="18" style="--c:#02569B"></div></div>
+            <span class="lb-pct">18%</span>
+          </div>
+          <div class="lang-bar-row">
+            <span class="lb-name">PHP / Laravel</span>
+            <div class="lb-track"><div class="lb-fill" data-pct="12" style="--c:#777BB4"></div></div>
+            <span class="lb-pct">12%</span>
+          </div>
+          <div class="lang-bar-row">
+            <span class="lb-name">Java</span>
+            <div class="lb-track"><div class="lb-fill" data-pct="7" style="--c:#ED8B00"></div></div>
+            <span class="lb-pct">7%</span>
+          </div>
+          <div class="lang-bar-row">
+            <span class="lb-name">Other</span>
+            <div class="lb-track"><div class="lb-fill" data-pct="4" style="--c:#8b5cf6"></div></div>
+            <span class="lb-pct">4%</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact" id="contact">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="section-desc">Open to collaborations, opportunities, and interesting conversations. Drop a message — I always reply.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-card" id="contact-email-card">
+            <div class="cc-icon">📬</div>
+            <div class="cc-body">
+              <span class="cc-label">Email</span>
+              <a href="mailto:balixsulait@gmail.com" class="cc-value" id="email-link">balixsulait@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-github-card">
+            <div class="cc-icon">🐙</div>
+            <div class="cc-body">
+              <span class="cc-label">GitHub</span>
+              <a href="https://github.com/balixsulait-alt" target="_blank" rel="noopener noreferrer" class="cc-value" id="github-link">github.com/balixsulait-alt</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-collab-card">
+            <div class="cc-icon">🤝</div>
+            <div class="cc-body">
+              <span class="cc-label">Open To</span>
+              <span class="cc-value">Open Source · Freelance · Full-time</span>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-startup-card">
+            <div class="cc-icon">🚀</div>
+            <div class="cc-body">
+              <span class="cc-label">Currently</span>
+              <span class="cc-value">Ideating 2030 startup — DMs open 👀</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="cf-name">Your Name</label>
+            <input type="text" id="cf-name" name="name" placeholder="John Doe" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="cf-email">Your Email</label>
+            <input type="email" id="cf-email" name="email" placeholder="john@example.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="cf-subject">Subject</label>
+            <input type="text" id="cf-subject" name="subject" placeholder="Let's collaborate on..." required />
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit" id="form-submit-btn">
+            <span class="btn-text">Send Message 🚀</span>
+            <span class="btn-loading" style="display:none;">Sending...</span>
+          </button>
+          <div class="form-success" id="form-success" style="display:none;">
+            ✅ Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-name">SB</span>
+          <span class="logo-bracket">/&gt;</span>
+        </div>
+        <p class="footer-tagline">"Code it. Break it. Secure it. Analyze it."</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://github.com/balixsulait-alt" target="_blank" rel="noopener noreferrer" class="social-btn" id="footer-github" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="mailto:balixsulait@gmail.com" class="social-btn" id="footer-email" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">© 2026 Sulaiman Balikoowa. Built with 💜 & lots of ☕</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
